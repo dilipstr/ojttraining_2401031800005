@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 1.2rem;
 font-family: "Poppins", sans-serif;
     --primary-color:rgb(66, 66, 255);
 }
@@ -14,6 +13,9 @@ header{
     align-items: center;
     height: 10vh;
     padding: 0 20px 0 20px;
+    border-bottom: 5px dotted black;
+    margin-bottom: 10px;
+    /* background: linear-gradient(to bottom,rgb(66, 66, 255),white); */
 }
 nav{
     display: flex;
@@ -120,6 +122,12 @@ nav{
 .other-btn{
     background-color: white;
     border: 0;
+    &:hover{
+        background-color: var(--primary-color);
+        color: white;
+        animation: 1s ease-in-out;
+        cursor: pointer;
+    }
 }
 
 .login-head{
@@ -160,3 +168,6 @@ table{
   text-transform: uppercase;
   letter-spacing: 0.75px;
 }
+
+
+

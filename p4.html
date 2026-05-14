@@ -1,0 +1,116 @@
+<!-- write a program for inline internal and external css using basic properties 
+write a program to perform animation effects using transform properties in css 
+write a program for grid layout using css  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p4</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .blog-wrapper{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            place-items: center;
+            margin-top: 20px;
+        }
+        .blog{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            background-color: #f2f2f2;
+            border-radius: 30px;
+            padding: 10px; 
+            animation:1.2s ease-in-out;
+            img{
+                border-radius: 20px;
+                margin-bottom: 10px;
+            }
+            .full-btn{
+                margin-top:10px
+            }
+            p{
+                color: grey;
+                max-lines: 1;
+                text-overflow: ellipsis;
+            }
+            &:hover{
+                box-shadow: #7e7e7e21 3px 3px 3px 3px;           
+            }
+        }
+        .animation-h1{
+            animation: underline-animation 1s ease-in-out infinite;
+        }
+        @keyframes underline-animation{
+            0%{
+                text-underline-offset: 10px;
+            }
+            50%{
+                text-underline-offset: 15px;
+            }
+            100%{
+                text-underline-offset: 10px;
+            }
+        }
+    </style>    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            Company
+        </div>
+        <nav>
+            <a href="/home.html" id="home">Home</a>
+            <a href="/" id="home">About</a>
+            <a href="/" id="home">Services</a>
+            <a href="/" id="home">Contact</a>
+            <a href="/login.html" id="login">Login</a>
+        </nav>
+    </header>
+    <div class="blogs">
+        <h1 class="animation-h1" style="text-align: center;color: blue; text-decoration: underline wavy; text-underline-offset: 10px">Blogs</h1>
+        <div class="blog-wrapper">
+            <div class="blog">
+                <img src="src/img1.jpg" alt="img1">
+                <h3>Hii this is a blog here</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
+                <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
+            </div>
+            <div class="blog">
+                <img src="src/img1.jpg" alt="img1">
+                <h3>Hii this is a blog here</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
+                <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
+            </div>
+            <div class="blog">
+                <img src="src/img1.jpg" alt="img1">
+                <h3>Hii this is a blog here</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
+                <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
+            </div>
+            <div class="blog">
+                <img src="src/img1.jpg" alt="img1">
+                <h3>Hii this is a blog here</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
+                <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
+            </div>
+            <div class="blog">
+                <img src="src/img1.jpg" alt="img1">
+                <h3>Hii this is a blog here</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
+                <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
+            </div>
+            <div class="blog">
+                <img src="src/img1.jpg" alt="img1">
+                <h3>Hii this is a blog here</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
+                <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
