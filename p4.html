@@ -9,15 +9,15 @@ write a program for grid layout using css  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>p4</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-        .blog-wrapper{
+        /* .blog-wrapper{
             display: grid;
             grid-template-columns: repeat(4,1fr);
             place-items: center;
             margin-top: 20px;
-        }
+        } */
         .blog{
-            width: 300px;
             display: flex;
             flex-direction: column;
             margin: 20px;
@@ -39,20 +39,20 @@ write a program for grid layout using css  -->
             }
             &:hover{
                 box-shadow: #7e7e7e21 3px 3px 3px 3px;           
-            }
+            }   
         }
         .animation-h1{
             animation: underline-animation 1s ease-in-out infinite;
         }
         @keyframes underline-animation{
             0%{
-                text-underline-offset: 10px;
-            }
-            50%{
                 text-underline-offset: 15px;
             }
+            50%{
+                text-underline-offset: 25px;
+            }
             100%{
-                text-underline-offset: 10px;
+                text-underline-offset: 15px;
             }
         }
     </style>    
@@ -71,40 +71,46 @@ write a program for grid layout using css  -->
             <a href="/login.html" id="login">Login</a>
         </nav>
     </header>
-    <div class="blogs">
-        <h1 class="animation-h1" style="text-align: center;color: blue; text-decoration: underline wavy; text-underline-offset: 10px">Blogs</h1>
-        <div class="blog-wrapper">
-            <div class="blog">
+    <div class="container blogs">
+        <h1 class="animation-h1" style="text-align: center;color: blue; text-decoration: underline wavy; text-underline-offset: 25px;font-weight: bold;">Blogs</h1>
+        <div class="row mt-3 ">
+            <div class="blog col-md-3">
                 <img src="src/img1.jpg" alt="img1">
                 <h3>Hii this is a blog here</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
                 <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
             </div>
-            <div class="blog">
+            <div class="blog col-md-3">
                 <img src="src/img1.jpg" alt="img1">
                 <h3>Hii this is a blog here</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
                 <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
             </div>
-            <div class="blog">
+            <div class="blog col-md-3">
                 <img src="src/img1.jpg" alt="img1">
                 <h3>Hii this is a blog here</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
                 <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
             </div>
-            <div class="blog">
+            <div class="blog col-md-3">
                 <img src="src/img1.jpg" alt="img1">
                 <h3>Hii this is a blog here</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
                 <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
             </div>
-            <div class="blog">
+            <div class="blog col-md-3">
                 <img src="src/img1.jpg" alt="img1">
                 <h3>Hii this is a blog here</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
                 <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
             </div>
-            <div class="blog">
+            <div class="blog col-md-3">
+                <img src="src/img1.jpg" alt="img1">
+                <h3>Hii this is a blog here</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
+                <button class="full-btn other-btn" type="submit" style="font-size: 15px ;">READ MORE</button>
+            </div>
+            <div class="blog col-md-3">
                 <img src="src/img1.jpg" alt="img1">
                 <h3>Hii this is a blog here</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate.</p>
@@ -112,5 +118,6 @@ write a program for grid layout using css  -->
             </div>
         </div>  
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
