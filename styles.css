@@ -168,6 +168,9 @@ table{
   text-transform: uppercase;
   letter-spacing: 0.75px;
 }
-
-
-
+.opbtn a{
+    opacity: .5;
+}
+.opbtn a:hover{
+    opacity:1
+}
