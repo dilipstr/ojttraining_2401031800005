@@ -5,9 +5,10 @@
     box-sizing: border-box;
 font-family: "Poppins", sans-serif;
     --primary-color:rgb(66, 66, 255);
+    --secondary-color:#f2f2f2;
 }
 
-header{
+/* header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +17,7 @@ header{
     border-bottom: 5px dotted black;
     margin-bottom: 10px;
     /* background: linear-gradient(to bottom,rgb(66, 66, 255),white); */
-}
+/* } */
 nav{
     display: flex;
     justify-content: space-around;
@@ -25,7 +26,7 @@ nav{
         color: black;
         text-decoration: none;
     }
-}
+} */
 .showcase{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -67,7 +68,7 @@ nav{
     }
 }
 
-.login-container{
+/* .login-container{
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -101,7 +102,7 @@ nav{
         }
         animation: 1s  ease-in-out;
     }
-}
+} */
 
 .full-btn {
     width: 100%;
@@ -112,6 +113,9 @@ nav{
     letter-spacing: 3px;
     font-weight: bold;
 }
+.ls-5{
+    letter-spacing: 3px;
+}
 
 .submit-btn{
     background-color: var(--primary-color);
@@ -120,7 +124,7 @@ nav{
 }
 
 .other-btn{
-    background-color: white;
+    background-color: var(--secondary-color);
     border: 0;
     &:hover{
         background-color: var(--primary-color);
@@ -130,47 +134,34 @@ nav{
     }
 }
 
-.login-head{
+/* .login-head{
     font-size: 50px;
     margin-bottom: 20px;
     text-underline-offset: 18px;
     text-decoration: underline wavy;
-}
-table{
-    border: 2px solid black;
-    
-}
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-  box-shadow: 0 10px 25px rgba(30, 41, 59, 0.1);
-
-  margin: 25px 0;
-}
-
-/* Base Configuration */
-.decorated-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  background-color: #ffffff;
-  min-width: 950px;
-}
-
-/* Header UI Elements */
-.decorated-table th {
-  background-color: #0f172a; /* Deep charcoal navy blue */
-  color: #f8fafc;
-  text-align: left;
-  padding: 18px 20px;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.75px;
-}
+} */
 .opbtn a{
     opacity: .5;
 }
 .opbtn a:hover{
     opacity:1
 }
+.full-height{
+    height: 90vh;
+}
+.bg-mysecond{
+    background-color: var(--secondary-color);
+}   
+
+.curve-underline{
+    text-decoration:underline wavy; 
+    text-underline-offset: 1rem;
+}
+/* .glass-box {
+  background: rgba(242, 242, 242, 0.25); 
+  backdrop-filter: blur(12px);          
+  -webkit-backdrop-filter: blur(12px);    
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+} */
+ 
