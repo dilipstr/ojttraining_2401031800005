@@ -43,7 +43,7 @@ nav{
     border-radius: 30px;
     .wrapper{
         display: flex;
-        animation: slide 12s infinite ease-in-out;
+        animation: slide 14s infinite linear;
         img{
             width: 800px;
             height: 600px;
@@ -54,17 +54,8 @@ nav{
     0%{
         transform: translateX(0);       
     }
-    25%{
-        transform: translateX(-800px);       
-    }
-    50%{
-        transform: translateX(-1600px);       
-    }
-    75%{
-        transform: translateX(-2400px);       
-    }
     100%{
-        transform: translateX(0px);       
+        transform: translateX(-3200px);       
     }
 }
 
@@ -157,6 +148,10 @@ nav{
     text-decoration:underline wavy; 
     text-underline-offset: 1rem;
 }
+/* .curve-underline:after{
+    content: "";
+
+} */
 /* .glass-box {
   background: rgba(242, 242, 242, 0.25); 
   backdrop-filter: blur(12px);          
