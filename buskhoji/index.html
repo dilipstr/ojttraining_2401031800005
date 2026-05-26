@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buskhojo — Bus Schedules</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+</head>
+<body class="bg-blue-50 text-slate-900">
+<nav class="bg-slate-950 px-8 py-4 flex justify-between items-center sticky top-0">
+  <a href="#" class="text-white text-xl font-bold">🚌 Buskhojo</a>
+  <ul class="flex gap-6 list-none">
+    <li><a href="#" class="text-gray-300 text-sm hover:text-white">Search</a></li>
+    <li><a href="#" class="text-gray-300 text-sm hover:text-white">Schedules</a></li>
+    <li><a href="#" class="text-gray-300 text-sm hover:text-white">Tracking</a></li>
+    <li><a href="#" class="text-gray-300 text-sm hover:text-white">My Tickets</a></li>
+  </ul>
+</nav>
+
+<div class="bg-slate-900 py-20 px-8 text-center">
+  <h1 class="text-white text-5xl font-bold mb-2">Find your next bus</h1>
+  <p class="text-gray-400 mb-6">Real-time schedules & live tracking across all routes</p>
+  <div class="bg-white rounded-xl p-6 max-w-2xl mx-auto flex gap-3 flex-wrap items-end">
+    <input type="text" placeholder="From — e.g. Ajmer" class="flex-1 min-w-36 px-3 py-2 border-2 border-gray-200 rounded-lg text-sm">
+    <input type="text" placeholder="To — e.g. Jaipur" class="flex-1 min-w-36 px-3 py-2 border-2 border-gray-200 rounded-lg text-sm">
+    <input type="date" class="flex-1 min-w-36 px-3 py-2 border-2 border-gray-200 rounded-lg text-sm">
+    <button class="px-6 py-2 bg-blue-600 text-white rounded-lg font-semibold">Search</button>
+  </div>
+</div>
+
+<section class="p-8">
+  <h2 class="text-lg font-bold mb-4">📅 Today's Schedule — Ajmer Bus Stand</h2>
+  <table class="w-full bg-white rounded-xl overflow-hidden shadow-md">
+    <thead><tr class="bg-slate-900 text-gray-300 text-xs uppercase tracking-wider"><th class="px-4 py-3 text-left">Route</th><th class="px-4 py-3 text-left">Destination</th><th class="px-4 py-3 text-left">Departs</th><th class="px-4 py-3 text-left">Arrives</th><th class="px-4 py-3 text-left">Type</th><th class="px-4 py-3 text-left">Fare</th><th class="px-4 py-3 text-left">Status</th></tr></thead>
+    <tbody>
+      <tr class="hover:bg-blue-50"><td class="px-4 py-3 border-b border-gray-200"><b>101</b></td><td class="px-4 py-3 border-b border-gray-200">Jaipur</td><td class="px-4 py-3 border-b border-gray-200">07:30</td><td class="px-4 py-3 border-b border-gray-200">09:45</td><td class="px-4 py-3 border-b border-gray-200">Express</td><td class="px-4 py-3 border-b border-gray-200">₹180</td><td class="px-4 py-3 border-b border-gray-200"><span class="px-2 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-700">On Time</span></td></tr>
+      <tr class="hover:bg-blue-50"><td class="px-4 py-3 border-b border-gray-200"><b>205</b></td><td class="px-4 py-3 border-b border-gray-200">Jaipur</td><td class="px-4 py-3 border-b border-gray-200">08:00</td><td class="px-4 py-3 border-b border-gray-200">10:30</td><td class="px-4 py-3 border-b border-gray-200">Fast</td><td class="px-4 py-3 border-b border-gray-200">₹150</td><td class="px-4 py-3 border-b border-gray-200"><span class="px-2 py-1 rounded-full text-xs font-semibold bg-orange-100 text-orange-700">Delayed</span></td></tr>
+      <tr class="hover:bg-blue-50"><td class="px-4 py-3 border-b border-gray-200"><b>88X</b></td><td class="px-4 py-3 border-b border-gray-200">Jaipur</td><td class="px-4 py-3 border-b border-gray-200">08:45</td><td class="px-4 py-3 border-b border-gray-200">10:45</td><td class="px-4 py-3 border-b border-gray-200">AC Express</td><td class="px-4 py-3 border-b border-gray-200">₹220</td><td class="px-4 py-3 border-b border-gray-200"><span class="px-2 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-700">On Time</span></td></tr>
+      <tr class="hover:bg-blue-50"><td class="px-4 py-3 border-b border-gray-200"><b>18</b></td><td class="px-4 py-3 border-b border-gray-200">Jodhpur</td><td class="px-4 py-3 border-b border-gray-200">09:00</td><td class="px-4 py-3 border-b border-gray-200">12:30</td><td class="px-4 py-3 border-b border-gray-200">Express</td><td class="px-4 py-3 border-b border-gray-200">₹240</td><td class="px-4 py-3 border-b border-gray-200"><span class="px-2 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-700">On Time</span></td></tr>
+      <tr class="hover:bg-blue-50"><td class="px-4 py-3 border-b border-gray-200"><b>22B</b></td><td class="px-4 py-3 border-b border-gray-200">Pushkar</td><td class="px-4 py-3 border-b border-gray-200">09:15</td><td class="px-4 py-3 border-b border-gray-200">09:45</td><td class="px-4 py-3 border-b border-gray-200">Local</td><td class="px-4 py-3 border-b border-gray-200">₹25</td><td class="px-4 py-3 border-b border-gray-200"><span class="px-2 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-700">On Time</span></td></tr>
+      <tr class="hover:bg-blue-50"><td class="px-4 py-3 border-b border-gray-200"><b>552</b></td><td class="px-4 py-3 border-b border-gray-200">Jaipur</td><td class="px-4 py-3 border-b border-gray-200">10:30</td><td class="px-4 py-3 border-b border-gray-200">12:45</td><td class="px-4 py-3 border-b border-gray-200">Express</td><td class="px-4 py-3 border-b border-gray-200">₹175</td><td class="px-4 py-3 border-b border-gray-200"><span class="px-2 py-1 rounded-full text-xs font-semibold bg-red-100 text-red-700">Cancelled</span></td></tr>
+      <tr class="hover:bg-blue-50"><td class="px-4 py-3"><b>99</b></td><td class="px-4 py-3">Delhi</td><td class="px-4 py-3">06:30</td><td class="px-4 py-3">12:30</td><td class="px-4 py-3">AC Volvo</td><td class="px-4 py-3">₹550</td><td class="px-4 py-3"><span class="px-2 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-700">On Time</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="p-8">
+  <h2 class="text-lg font-bold mb-6">✨ Features</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="bg-white rounded-xl p-5 border-2 border-gray-200"><div class="text-2xl mb-2">📍</div><h3 class="font-bold text-sm mb-2">Live GPS Tracking</h3><p class="text-xs text-gray-500 leading-relaxed">See your bus on a live map updated every 15 seconds.</p></div>
+    <div class="bg-white rounded-xl p-5 border-2 border-gray-200"><div class="text-2xl mb-2">⏰</div><h3 class="font-bold text-sm mb-2">Real-time Schedules</h3><p class="text-xs text-gray-500 leading-relaxed">Accurate times with live delay notifications.</p></div>
+    <div class="bg-white rounded-xl p-5 border-2 border-gray-200"><div class="text-2xl mb-2">🔔</div><h3 class="font-bold text-sm mb-2">Smart Alerts</h3><p class="text-xs text-gray-500 leading-relaxed">Get notified when your bus is approaching or delayed.</p></div>
+    <div class="bg-white rounded-xl p-5 border-2 border-gray-200"><div class="text-2xl mb-2">🎫</div><h3 class="font-bold text-sm mb-2">Ticket Booking</h3><p class="text-xs text-gray-500 leading-relaxed">Book & pay for tickets directly with QR code passes.</p></div>
+  </div>
+</section>
+
+<footer class="bg-slate-900 text-gray-400 text-center py-6 text-sm">© 2026 Buskhojo · Ajmer, Rajasthan</footer>
+</body>
+</html>

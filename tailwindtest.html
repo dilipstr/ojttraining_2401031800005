@@ -1,0 +1,36 @@
+<!-- create a flexbox layout with tailwind css 
+create a responsive navigation bar with tailwind css
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex w-screen h-[10vh] justify-center items-center">
+    <ul class="flex gap-2 items-center">
+        <li>Home</li>
+        <li>Blogs</li>
+        <li>About</li>
+    </ul>
+</div>
+    <div class="bg-yellow-300 h-[90vh] w-screen">
+        <div class="flex flex-col items-center justify-center h-full gap-2">
+            <div class="heading bg-white w-2/3 text-center">
+                <h1 class="text-3xl uppercase font-bold">Flex Box</h1>
+            </div> 
+            <div class="flex flex-wrap w-2/3 gap-2 justify-center">
+                <div class="w-30 h-30 bg-red-400 flex items-center justify-center text-5xl font-bold">1</div>
+                <div class="w-30 h-30 bg-blue-400 flex items-center justify-center text-5xl font-bold">2</div>
+                <div class="w-30 h-30 bg-cyan-400 flex items-center justify-center text-5xl font-bold">3</div>
+                <div class="w-30 h-30 bg-slate-400 flex items-center justify-center text-5xl font-bold">4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

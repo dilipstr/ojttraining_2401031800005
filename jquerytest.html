@@ -1,0 +1,98 @@
+<!-- create a registeration form and apply a validation using js
+create a zebra strip table effect using jquery
+move one div element inside another using jquery
+remove a specific table row using jquery -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .zebra{
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <p id="txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, cupiditate! Et aut eveniet ex laboriosam doloribus ipsum numquam inventore commodi voluptates sint quam blanditiis, omnis dolores, sapiente ad deleniti impedit!</p>
+    <button id="hide-text">Hide Text</button>
+    <button id="show-text">Show Text</button>
+    <button id="toggle-text">Toggle Text</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>Software Engineer</td>
+                <td><button id="rmtr">x</button></td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Smith</td>
+                <td>Project Manager</td>
+                <td><button id="rmtr">x</button></td>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>Jones</td>
+                <td>UX Designer</td>
+                <td><button id="rmtr">x</button></td>
+            </tr>
+            <tr>
+                <td>Emily</td>
+                <td>Brown</td>
+                <td>Data Analyst</td>
+                <td><button id="rmtr">x</button></td>
+            </tr>
+            <tr>
+                <td>Michael</td>
+                <td>Green</td>
+                <td>DevOps Specialist</td>
+                <td><button id="rmtr">x</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="div1" style="background: grey;">
+        <p>This is div1</p>
+        <button id="mvdiv2">Move div2 here</button>
+    </div>
+    <div class="div2">
+        <p>This is div2</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $("document").ready(function(){
+            $("tbody tr:odd").addClass("zebra") 
+
+            $("button#rmtr").click(function(){
+                $(this).closest("tr").remove()
+            })
+            
+            $("#mvdiv2").click(function(){
+                $(".div2").appendTo(".div1")
+            })
+
+            $("#hide-text").click(function(){
+                $("#txt").hide()
+            })
+
+            $("#show-text").click(function(){
+                $("#txt").show()
+            })
+            $("#toggle-text").click(function(){
+                $("#txt").toggle()
+            })
+        })
+    </script>
+</body>
+</html>

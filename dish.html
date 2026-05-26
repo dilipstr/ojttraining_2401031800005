@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dish</title>
+</head>
+<body>
+    <input type="text" id="dish" placeholder="Enter a dish">
+    <button id="show" onclick="showDish()">Submit</button>
+    <script>
+        let dish =  document.getElementById("dish")
+        const showDish = ()=>{
+            alert(dish.value)
+        }
+    </script>
+</body>
+</html>
