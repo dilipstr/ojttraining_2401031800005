@@ -42,7 +42,7 @@
 <div class="d-flex justify-content-center align-items-center full-height">
         <div class="card p-4 bg-mysecond rounded-5 m-2" style="width:25rem;">            
             <h1 class="h1 fw-bold" style="text-decoration:underline wavy; text-underline-offset: 1rem;">Register</h1>
-            <form action="/" method="get">
+            <form action="http://localhost:3000/register" method="post">
                 <div class="mb-3 mt-3">
                     <label for="name" class="form-label text-secondary">Name</label>
                     <input type="text" name="name" id="name" placeholder="Enter Your Name:" class="form-control rounded-5">
@@ -57,7 +57,7 @@
                 </div>
                 <div class="mb-3 mt-3">
                     <label for="confirm-password" class="form-label text-secondary">Repeat password</label>
-                    <input type="confirm-password" name="email" id="confirm-password" placeholder="Repeat password" class="form-control rounded-5">
+                    <input type="confirm-password" name="cfpass" id="confirm-password" placeholder="Repeat password" class="form-control rounded-5">
                 </div>
                 <div class="form-check mb-3 gap-2">
                     <input type="checkbox" name="remember" id="remember" class="form-check-input">
