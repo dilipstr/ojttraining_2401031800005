@@ -4,10 +4,21 @@
     margin: 0;
     box-sizing: border-box;
 font-family: "Poppins", sans-serif;
-    --primary-color:rgb(66, 66, 255);
-    --secondary-color:#f2f2f2;
+    --primary-color: #2d8a4e;
+    --secondary-color: #f0f7f2;
 }
 
+.form-control:focus {
+  border-color: #2d8a4e !important;
+  box-shadow: 0 0 0 0.2rem #2d8a4e !important;
+}
+.form-check-input:focus{
+    border-color: #2d8a4e !important;
+}
+.form-check-input:checked{
+    background-color: #2d8a4e !important;
+    border-color:  #2d8a4e !important;
+}
 /* header{
     display: flex;
     justify-content: space-between;
@@ -37,7 +48,7 @@ nav{
     }
 }
 .slider{
-    width: 800px;
+    width: 100%;
     height: 600px;
     overflow: hidden;
     border-radius: 30px;
@@ -45,8 +56,10 @@ nav{
         display: flex;
         animation: slide 14s infinite linear;
         img{
-            width: 800px;
+            width: 100%;
+            min-width: 100%;
             height: 600px;
+            object-fit: cover;
         }
     }
 }
@@ -55,7 +68,7 @@ nav{
         transform: translateX(0);       
     }
     100%{
-        transform: translateX(-3200px);       
+        transform: translateX(-400%);       
     }
 }
 

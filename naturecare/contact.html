@@ -22,13 +22,16 @@
                         <a class="nav-link" aria-current="page" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
+                        <a class="nav-link" href="products.html">Shop</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="authLink">Login</a>
                     </li>
                 </ul>
             </div>
@@ -52,7 +55,7 @@ Contact Us</legend>
           <label for="body" class="form-label">Body</label>
           <textarea name="body" id="body" class="form-control rounded-3" placeholder="Enter Your Detail" rows="3" style="resize: none;"></textarea>
         </div>
-        <button class="btn btn-dark w-100 rounded-5 p-3 fw-bold ls-5 mb-2">Submit</button>
+        <button class="btn w-100 rounded-5 p-3 fw-bold ls-5 mb-2" style="background-color:#2d8a4e;color:white;">Submit</button>
       </form>
     </div>
     <div class="col-md-6">
@@ -61,7 +64,7 @@ Contact Us</legend>
       </div>
     </div>
   </div>
-  <div class="table-container mt-5">
+  <div class="table-container mt-5 mb-5 overflow-x-scroll">
   <table class="table">
     <thead>
       <tr>
@@ -160,25 +163,51 @@ Contact Us</legend>
   </table>
 </div>
 </div>
-<footer class="bg-body-tertiary mt-4 pt-5 text-center shadow">
-        <div>
-            <p class="fs-2 fw-bold">Developed By <span class="fs-5 fw-normal">Dilip</span></p>
+<footer style="background:#1a5c34;color:white;">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold fs-4 mb-3"><i class="fa-solid fa-tree me-2"></i>Nature Care</h5>
+                    <p class="small" style="opacity:.8;">Bringing the best of nature to your home. Organic plants, seeds, and natural products — sustainably sourced and lovingly delivered.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://github.com/dilipstr" style="color:white;opacity:.7;" class="fs-5"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/dilipstr" style="color:white;opacity:.7;" class="fs-5"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/dilipstr" style="color:white;opacity:.7;" class="fs-5"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 offset-md-1">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home.html" style="color:white;opacity:.75;text-decoration:none;">Home</a></li>
+                        <li class="mb-2"><a href="products.html" style="color:white;opacity:.75;text-decoration:none;">Shop</a></li>
+                        <li class="mb-2"><a href="about.html" style="color:white;opacity:.75;text-decoration:none;">About</a></li>
+                        <li class="mb-2"><a href="contact.html" style="color:white;opacity:.75;text-decoration:none;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Account</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" style="color:white;opacity:.75;text-decoration:none;">Login</a></li>
+                        <li class="mb-2"><a href="signup.html" style="color:white;opacity:.75;text-decoration:none;">Register</a></li>
+                        <li class="mb-2"><a href="checkout.html" style="color:white;opacity:.75;text-decoration:none;">Checkout</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contact Us</h6>
+                    <p class="small mb-2" style="opacity:.8;"><i class="fa-solid fa-location-dot me-2"></i>Mumbai, Maharashtra, India</p>
+                    <p class="small mb-2" style="opacity:.8;"><i class="fa-solid fa-envelope me-2"></i>hello@naturecare.in</p>
+                    <p class="small mb-0" style="opacity:.8;"><i class="fa-solid fa-phone me-2"></i>+91 98765 43210</p>
+                </div>
+            </div>
         </div>
-        <ul class="navbar-nav m-0 p-0 justify-content-start mb-4">
-            <li class="nav-item opacity-50 opbtn">
-                <a href="https:/github.com/dilipstr" class="nav-link fs-5"><i class="fa-brands fa-github"></i>Github</a>
-            </li>
-            <li class="nav-item opacity-50 opbtn">
-                <a href="https:/github.com/dilipstr" class="nav-link fs-5"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-            </li>
-            <li class="nav-item opacity-50 opbtn">
-                <a href="https:/github.com/dilipstr" class="nav-link fs-5"><i class="fa-brands fa-instagram"></i>Instagram</a>
-            </li>
-        </ul>
-        <div class="bg-light d-flex align-items-center justify-content-center p-3" style="border-top: 2px dotted black;">
-            <p class="fs-6 fw-bolder">Nature Care &copy; 2026</p>
+        <div style="background:rgba(0,0,0,0.2);padding:1rem 0;">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <p class="mb-0 small" style="opacity:.75;">Nature Care &copy; 2026. All rights reserved.</p>
+                <p class="mb-0 small" style="opacity:.75;">Made with <i class="fa-solid fa-heart" style="color:#ff6b6b;"></i> by Dilip</p>
+            </div>
         </div>
-</footer>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="navbar.js"></script>
 </body>
 </html>

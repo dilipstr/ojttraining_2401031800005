@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky sticky-top glass-box shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4" href="#"><i class="fa-solid fa-tree"></i>Nature Care</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="authLink">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="d-flex w-100 justify-content-center align-items-center full-height">
+        <div class="card w-25 p-4 bg-mysecond rounded-5"> -->
+<div class="d-flex justify-content-center align-items-center full-height">
+        <div class="card p-4 bg-mysecond rounded-5 m-2" style="width:25rem;">            
+            <h1 class="h1 fw-bold text-success" style="text-decoration:underline wavy; text-underline-offset: 1rem;">Register</h1>
+            <form action="#" method="" id="registerForm">
+                <div class="mb-3 mt-3">
+                    <label for="name" class="form-label text-secondary">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name:" class="form-control rounded-5" required>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label text-secondary">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email:" class="form-control rounded-5" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label text-secondary" for="password">Password</label>
+                    <input class="form-control rounded-5" type="password" name="password" id="password" placeholder="Enter Your Password" required>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="confirm-password" class="form-label text-secondary">Repeat password</label>
+                    <input type="password" name="confirmPassword" id="confirm-password" placeholder="Repeat password" class="form-control rounded-5" required>
+                </div>
+                <div class="form-check mb-3 gap-2">
+                    <input type="checkbox" name="remember" id="remember" class="form-check-input">
+                    <label for="remember" class="form-check-label text-secondary">Remember Your Password</label>
+                </div>
+                <button class="btn w-100 rounded-5 p-3 fw-bold ls-5 mb-2" style="background-color:#2d8a4e;color:white;" type="submit">REGISTER</button>
+                <a href="login.html">
+                    <button class="btn btn-light w-100 rounded-5 p-3 fw-bold ls-5" type="button">SIGN IN</button>
+                </a>
+            </form>
+            <div id="registerMsg" class="mt-2 text-center small"></div>
+        </div>
+    </div>
+<footer style="background:#1a5c34;color:white;">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold fs-4 mb-3"><i class="fa-solid fa-tree me-2"></i>Nature Care</h5>
+                    <p class="small" style="opacity:.8;">Bringing the best of nature to your home. Organic plants, seeds, and natural products — sustainably sourced and lovingly delivered.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://github.com/dilipstr" style="color:white;opacity:.7;" class="fs-5"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/dilipstr" style="color:white;opacity:.7;" class="fs-5"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/dilipstr" style="color:white;opacity:.7;" class="fs-5"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 offset-md-1">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="home.html" style="color:white;opacity:.75;text-decoration:none;">Home</a></li>
+                        <li class="mb-2"><a href="products.html" style="color:white;opacity:.75;text-decoration:none;">Shop</a></li>
+                        <li class="mb-2"><a href="about.html" style="color:white;opacity:.75;text-decoration:none;">About</a></li>
+                        <li class="mb-2"><a href="contact.html" style="color:white;opacity:.75;text-decoration:none;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Account</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" style="color:white;opacity:.75;text-decoration:none;">Login</a></li>
+                        <li class="mb-2"><a href="signup.html" style="color:white;opacity:.75;text-decoration:none;">Register</a></li>
+                        <li class="mb-2"><a href="checkout.html" style="color:white;opacity:.75;text-decoration:none;">Checkout</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contact Us</h6>
+                    <p class="small mb-2" style="opacity:.8;"><i class="fa-solid fa-location-dot me-2"></i>Mumbai, Maharashtra, India</p>
+                    <p class="small mb-2" style="opacity:.8;"><i class="fa-solid fa-envelope me-2"></i>hello@naturecare.in</p>
+                    <p class="small mb-0" style="opacity:.8;"><i class="fa-solid fa-phone me-2"></i>+91 98765 43210</p>
+                </div>
+            </div>
+        </div>
+        <div style="background:rgba(0,0,0,0.2);padding:1rem 0;">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <p class="mb-0 small" style="opacity:.75;">Nature Care &copy; 2026. All rights reserved.</p>
+                <p class="mb-0 small" style="opacity:.75;">Made with <i class="fa-solid fa-heart" style="color:#ff6b6b;"></i> by Dilip</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="navbar.js"></script>
+    <script>
+        const API = 'http://localhost:3000';
+        const msg = document.getElementById('registerMsg');
+
+        document.getElementById('registerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            if (password !== confirmPassword) {
+                msg.innerHTML = '<span class="text-danger">Passwords do not match</span>';
+                return;
+            }
+            try {
+                const res = await fetch(`${API}/auth/register`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, password, confirmPassword })
+                });
+                const data = await res.json();
+                if (res.ok) {
+                    localStorage.setItem('token', data.token);
+                    localStorage.setItem('user', JSON.stringify(data.user));
+                    window.location.href = 'home.html';
+                } else {
+                    msg.innerHTML = `<span class="text-danger">${data.message}</span>`;
+                }
+            } catch {
+                msg.innerHTML = '<span class="text-danger">Server not reachable. Is the backend running?</span>';
+            }
+        });
+    </script>
+</body>
+</html>
